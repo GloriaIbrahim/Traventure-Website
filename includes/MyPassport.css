@@ -1,0 +1,62 @@
+body{
+   background-color: #E0FFFF;
+}
+.checkbox{
+	width:25px;
+	height:25px;
+}
+#myPassport img{
+	width:100px;
+	height:80px;
+}
+#myPassport span{
+	margin-right:30%;
+	margin-top:2%;
+	float:right;
+}
+#myPassport h1 {
+    color: black;
+    margin-left: 25%;
+    font-weight: bold;
+	font-family: "Merriweather";
+	font-size:40px;
+}
+#myPassport h2 {
+    color: black;
+    margin-left: 25%;
+    font-weight: bold;
+	font-family: "Merriweather";
+	font-size:30px;
+}
+td{
+	color:black;
+    font-size: 30px;
+    font-weight: bold;
+	font-family: "Merriweather";
+	word-spacing: 10px;
+	margin-left: 25%;
+}
+#myPassport p{
+	color: red;
+	word-spacing: 10px;
+    font-weight: bold;
+	font-family: "Merriweather";
+	font-size:20px;
+	margin-left: 25%;
+}
+
+#myPassport button{
+	position: relative;
+	font-weight:bold;
+	font-family: "Merriweather";
+    font-size: 20px;
+    display: block;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    background-color: #0099ff;
+    border: none;
+    cursor: pointer;
+	margin-left:80%;
+    border-radius: 4px;
+}

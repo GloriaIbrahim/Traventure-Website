@@ -1,0 +1,262 @@
+body{
+	background-color:black;
+}
+
+
+.fullBackground{
+	background-position:center center;
+	background-attachment:fixed;
+	background-size:cover;
+	background-repeat: no-repeat;
+	position:relative;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	width:100%;
+	height:100%;
+	min-height: 100%;
+	z-index: 2;
+}
+
+.fullBackground img {
+	vertical-align: middle;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	width:100%;
+	height:100%;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+	z-index: 2;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+#cities{
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 0;
+
+}
+
+#cities img{
+	margin-left:0%;
+	width:100%;
+	opacity: 0.5;
+	height:100%;
+	z-index: 2;
+}
+.column2 h1{
+	color:white;
+    font-weight: bold;
+	font-family: "Merriweather";
+    letter-spacing: 5px;
+    text-align: center;
+	font-size: 35px;
+}
+#text {
+    position: absolute;
+    font-family: "Merriweather";
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    top: 50%;
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+	opacity:1;
+}
+.passport{
+	padding-left:12%;
+	padding-top:10%;
+	padding-bottom:10%;
+	padding-right:12%;
+	width:100%;
+	height:80%;
+	text-align:center;
+	position:relative;
+	background-color:white;
+}
+.passport img{
+	height: 200px;
+    width: 250px;
+}
+.passport p{
+	position: relative;
+    width: 100%;
+    font-size: 60px;
+	font-weight:bold;
+	font-family: "Merriweather";
+    color: black;
+    text-align: center;
+}
+.dropright {
+    position: relative;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.dropright-content {
+    display: none;
+    position: absolute;
+    background-color: #0099ff;
+    min-width: 160px;
+    left:98%;
+    z-index: 1;
+    border-radius: 4px;
+	text-align:left;
+}
+
+.dropright-content a {
+    color: black;
+    padding: 12px 16px;
+	font-family: "Merriweather";
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropright-content a:hover {
+	background-color: #ccc
+}
+
+.dropright:hover .dropright-content {
+    display: block;
+}
+
+.city{
+	margin-left:5%;
+	width:120%;
+	height:100%;
+	text-align:center;
+	position:relative;
+	background-color:black;
+}
+.city img{
+	height:150%;
+	width:130%;
+	opacity:0.4;
+}
+.city button,.passport button{
+	float: right;
+    display: block;
+    color: black;
+    right:2px;
+    margin:5px;
+    transition: all 0.5s;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #0099ff;
+    border: none;
+    cursor: pointer;
+    margin-top:10%;
+    border-radius: 4px;
+}
+.city button span,.passport button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.city button span:after,.passport button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.city button:hover span ,.passport button:hover span {
+  padding-right: 25px;
+}
+
+.city button:hover span:after ,.passport button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#googleMap{
+	width:100%;
+	height:100%;
+	margin-top:10%;
+	position: relative;
+}
+.myCheck{
+	width:25px;
+	height:25px;
+}
+.active {
+  background-color: #717171;
+}
+
+.column {
+    float: left;
+    width: 15%;
+	color: #777;
+	background-color:white;
+	text-align:center;
+	padding-right:15%;
+    height: 50%; /* Should be removed. Only for demonstration */
+}
+.column2 {
+    float: left;
+    width: 15%;
+	color: #777;
+	background-color:black;
+	text-align:center;
+	padding:8%;
+	padding-left:2%;
+    height: 50%; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.passport:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,99 @@
+
+body {
+	background-color:#E0FFFF;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.containerAttra {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlidesAttra {
+    display: none;
+	text-align:center;
+}
+.mySlidesAttra img{
+	height:850px;
+	width:85%;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursorAttra {
+  cursor: pointer;
+}
+.columnAttra img{
+	height:250px;
+	width:100%;
+}
+/* Next & previous buttons */
+.prevAttra,
+.nextAttra {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.nextAttra {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevAttra:hover,
+.nextAttra:hover {
+  background-color: #0099ff;
+}
+
+/* Number text (1/3 etc) */
+.numbertextAttra {
+	color: black;
+	font-size: 30px;
+	padding: 20px 30px;
+    font-weight: bold;
+	font-family: "Merriweather";
+	position: absolute;
+	top: 0;
+}
+
+/* Container for image text */
+.caption-containerAttra {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.rowAttra:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.columnAttra {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demoAttra {
+  opacity: 0.7;
+}
+
+.active,
+.demoAttra:hover {
+  opacity: 1;
+}
